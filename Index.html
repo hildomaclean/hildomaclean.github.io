@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hildo Mac Lean Loayza Loza</title>
+
+<style>
+
+/* ====== GENERAL ====== */
+
+:root{
+    --accent:#2563eb;
+    --text:#1e293b;
+    --muted:#64748b;
+    --border:#e2e8f0;
+    --bg:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
+                 Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    max-width:1000px;
+    margin:auto;
+    padding:60px 40px;
+    line-height:1.8;
+}
+
+/* ====== HEADER ====== */
+
+h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    font-size:1.1rem;
+    color:var(--muted);
+    margin-bottom:25px;
+}
+
+body > p:first-of-type{
+    color:var(--accent);
+    font-weight:600;
+    margin-bottom:40px;
+}
+
+/* ====== SECTIONS ====== */
+
+h2{
+    margin-top:60px;
+    margin-bottom:20px;
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--text);
+    border:none;
+    position:relative;
+    padding-bottom:8px;
+}
+
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:60px;
+    height:3px;
+    background:var(--accent);
+    border-radius:10px;
+}
+
+/* ====== LINKS ====== */
+
+a{
+    color:var(--accent);
+    text-decoration:none;
+    transition:0.2s;
+}
+
+a:hover{
+    opacity:.7;
+}
+
+/* ====== LISTS ====== */
+
+ul{
+    list-style:none;
+    padding-left:0;
+}
+
+ul li{
+    margin-bottom:12px;
+    padding-left:20px;
+    position:relative;
+}
+
+ul li::before{
+    content:"▸";
+    position:absolute;
+    left:0;
+    color:var(--accent);
+}
+
+/* ====== CARDS ====== */
+
+.project,
+.pub{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:18px 22px;
+    margin-bottom:15px;
+    transition:.2s;
+}
+
+.project:hover,
+.pub:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+/* ====== ABOUT ====== */
+
+h2 + p{
+    font-size:1.05rem;
+    color:#334155;
+}
+
+/* ====== CONTACT ====== */
+
+h2:last-of-type + p{
+    background:white;
+    border-radius:12px;
+    border:1px solid var(--border);
+    padding:20px;
+}
+
+/* ====== FOOTER ====== */
+
+.footer{
+    margin-top:80px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    text-align:center;
+    font-size:.95rem;
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (max-width:768px){
+
+    body{
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+}
+
+.hero-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:40px 0;
+}
+
+.hero-stats div{
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+
+.hero-stats strong{
+    font-size:1.6rem;
+    color:#2563eb;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Hildo Mac Lean Loayza Loza</h1>
+
+<div class="hero-stats">
+    <div><strong>20+</strong><br>Years Experience</div>
+    <div><strong>15+</strong><br>Journal Papers</div>
+    <div><strong>4</strong><br>Funded Projects</div>
+    <div><strong>RENACYT</strong><br>Level III</div>
+</div>
+
+<div class="subtitle">
+Research Associate – International Potato Center (CIP)<br>
+RENACYT Level III | PhD Sorbonne Université
+</div>
+
+<p>
+Remote Sensing · Precision Agriculture · UAV Phenotyping ·
+Machine Learning · Crop Modeling
+</p>
+
+<h2>About</h2>
+
+<p>
+Physicist and researcher specializing in remote sensing,
+precision agriculture, UAV-based crop monitoring,
+chlorophyll fluorescence, and machine learning for crop
+phenotyping and disease detection.
+</p>
+
+<h2>Academic Profiles</h2>
+
+<ul>
+<li><a href="#">ORCID</a></li>
+<li><a href="#">Scopus</a></li>
+<li><a href="#">RENACYT</a></li>
+<li><a href="#">Google Scholar</a></li>
+</ul>
+
+<h2>Research Projects</h2>
+
+<div class="project">
+<b>2022–2023</b><br>
+Precision agriculture for maize and wheat biomass and yield estimation using UAV imagery and machine learning.
+</div>
+
+<div class="project">
+<b>2018–2020</b><br>
+Coffee Alliance for Excellence: UAV-based monitoring of coffee plantations.
+</div>
+
+<div class="project">
+<b>2016–2018</b><br>
+Improving water management through crop water status monitoring.
+</div>
+
+<div class="project">
+<b>2013–2016</b><br>
+Remote sensing for sweet potato cropping area determination in Africa.
+</div>
+
+<h2>Recent Publications</h2>
+
+<div class="pub">2025 – Agro-morphological characterization of tarwi accessions using UAV-derived spectral metrics.</div>
+
+<div class="pub">2025 – Crop rotation history and soil organic carbon prediction using machine learning.</div>
+
+<div class="pub">2025 – Potato production under zero tillage with rice straw mulching.</div>
+
+<div class="pub">2024 – Glacier outline and volume changes in the Vilcanota Range.</div>
+
+<div class="pub">2024 – Watershed-scale soil moisture estimation using machine learning.</div>
+
+<div class="pub">2024 – High-throughput phenotyping of virus resistance in sweetpotato.</div>
+
+<div class="pub">2023 – Digital mapping of agricultural soil properties using UAV imagery.</div>
+
+<div class="pub">2022 – Active and passive chlorophyll fluorescence measurements at canopy level.</div>
+
+<div class="pub">2022 – Chlorophyll estimation in potato leaflets using vegetation reflectance.</div>
+
+<div class="pub">2021 – UAV phenotyping of sweetpotato under water stress.</div>
+
+<h2>Teaching</h2>
+
+<ul>
+<li>Universidad Nacional Federico Villarreal</li>
+<li>Universidad Nacional Agraria La Molina</li>
+</ul>
+
+<h2>Recent Presentations</h2>
+
+<ul>
+<li>SINAPSIS 2024</li>
+<li>Mondobioali Webinar 2021</li>
+<li>UTEC 2020</li>
+<li>World Potato Congress 2018</li>
+</ul>
+
+<h2>Contact</h2>
+
+<p>
+Email: h.loayza@cgiar.org<br>
+Lima, Peru
+</p>
+
+<div class="footer">
+© 2026 Hildo Mac Lean Loayza Loza
+</div>
+
+</body>
+</html>
